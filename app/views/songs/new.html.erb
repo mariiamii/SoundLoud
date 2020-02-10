@@ -1,0 +1,17 @@
+<h2> Add Your Song Here </h2>
+
+<%= form_for @song do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :audio_file %>
+<%= f.text_field :audio_file %>
+
+<%= f.label :artist_id %>
+<%= f.collection_select :artist_id, @artists, :id, :name %>
+
+<%= f.submit %>
+
+<%end%>
+

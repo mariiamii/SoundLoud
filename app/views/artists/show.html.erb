@@ -1,0 +1,6 @@
+<h1>Artist Show Page</h1>
+
+<h1><%= @artist.name %>'s Page</h1>
+
+<%= button_to "Delete Artist", artist_path(@artist), method: :delete %>
+<%= button_to "Create Artist", new_artist_path, method: :get%>
